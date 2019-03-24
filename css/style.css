@@ -1,0 +1,774 @@
+/*Css reset*/
+@font-face {
+	font-family: 'Gotham Book';
+	src: url('../fonts/Gotham-Book.eot');
+	src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gotham-Book.woff2') format('woff2'),
+		 url('../fonts/Gotham-Book.woff') format('woff'),
+		 url('../fonts/Gotham-Book.ttf') format('truetype'),
+		 url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Black.eot');
+	src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gotham-Black.woff2') format('woff2'),
+		 url('../fonts/Gotham-Black.woff') format('woff'),
+		 url('../fonts/Gotham-Black.ttf') format('truetype'),
+		 url('../fonts/Gotham-Black.svg#Gotham-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+#cabecalho{
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+.logomarca{
+	width: 80%;
+}
+.menu{
+	margin-top: 5%;
+}
+.menu li{
+	display: inline-block;
+	font-family: 'Gotham Book';
+	font-size: 1em;
+    padding: 0 2%;
+    display: none;
+}
+.menu a{
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	padding:3px 0;
+}
+.active-menu{
+	border-top: 2px solid #d22311;
+	border-bottom: 2px solid #d22311;
+	animation-name: animacao_menu;
+	animation-duration: .5s;
+}
+@-webkit-keyframes animacao_menu{
+    0%{
+    	opacity: 0;
+    }
+    50%{
+    	opacity: .5;
+    }
+    100%{
+    	opacity: 1;
+    }
+}
+
+.botao-doacao button{
+	float: right;
+	margin-top: -7%;
+	width: 100px;
+	height: 45px;
+	border-radius: 3px;
+	border:none;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #05ea05;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+.botao-doacao button:hover{
+	color: #05ea05;
+	border:1px solid #05ea05;
+	background-color: #fff;
+}
+#slide{
+	width: 100%;
+}
+#slide ul{
+	position: relative;
+}
+@-webkit-keyframes anim_slide {
+
+0% {
+    opacity:0;
+}
+6% {
+    opacity:1;
+}
+24% {
+    opacity:1;
+}
+30% {
+    opacity:0;
+}
+100% {
+    opacity:0;
+}
+}
+
+@-moz-keyframes anim_slide {
+
+0% {
+    opacity:0;
+}
+6% {
+    opacity:1;
+}
+24% {
+    opacity:1;
+}
+30% {
+    opacity:0;
+}
+100% {
+    opacity:0;
+}
+}
+#slide li{
+	 opacity:0;
+     position:absolute;
+     top:0;
+	-webkit-animation-name: anim_slide;
+	-webkit-animation-duration: 24.0s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-delay: 0;
+	-webkit-animation-play-state: running;
+	-webkit-animation-fill-mode: forwards;
+
+	-moz-animation-name: anim_slide;
+	-moz-animation-duration: 24.0s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+#slide li:nth-child(1){
+	-webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+}
+#slide li:nth-child(2){
+	-webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+#slide li:nth-child(3){
+	-webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+#slide li:nth-child(4){
+	-webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+
+#slide img{
+	display: block;
+}
+
+#artigo{
+	margin-top: 55%;
+}
+.secao-ebd h2,.secao-evento h2, .secao-acao-social h2, .secao-ebd p, .secao-evento p, .secao-acao-social p{
+     text-transform: uppercase;
+     font-size: 1.5em;
+     text-align: center;
+     font-family: 'Gotham Book';
+     
+}
+.secao-ebd p, .secao-evento p, .secao-acao-social p{
+	font-size: 1em;
+	text-align: left;
+	text-transform: none;
+	line-height: 25px;
+}
+.secao-ebd button, .secao-evento button, .secao-acao-social button{
+	background-color: #d22311;
+	width: 90px;
+	height: 38px;
+	color: #fff;
+	font-family: 'Gotham Book';
+	text-transform: uppercase;
+	font-size: 0.875em;
+	border:none;
+	margin-top: 10%;
+	letter-spacing: 1px;
+	margin-left: 30%;
+}
+.secao-ebd button:hover, .secao-evento button:hover, .secao-acao-social button:hover{
+	color: #d22311;
+	background-color: #fff;
+	border:1px solid #d22311;
+	transition: all 1s;
+}
+#banner{
+	width: 100%;
+	height: 400px;
+	background-color: #a0a0a0;
+	margin-top: 8%;
+}
+#banner h1{
+	color: #242020;
+}
+#rodape{
+	background-color: #1b1b1b;
+	margin-top: 6%;
+	color: #fff;
+}
+.programacao h2, .ministerio h2, .tema h2, .localizacao h2, .contato h2, .social h2, #sobre h2, #texto h1, #text-projeto h2, .programacao h5, .texto-curso h1{
+	font-size: 1.5em;
+	font-family: 'Gotham';
+	text-transform: uppercase;
+}
+.programacao h5{
+	font-size: 1em;
+}
+.programacao p, .ministerio li, .localizacao p, .contato p, #sobre p, #evento p, #estudo p, .text-doacao p, #projeto p, #samaritano p, .meios-contato p{
+	font-size: 0.87em;
+	font-family: 'Gotham Book';
+	text-transform: uppercase;
+}
+.ministerio li{
+	line-height: 25px;
+}
+.programacao, .ministerio, .tema{
+	margin-top: 5%;
+}
+.localizacao, .contato, .social{
+	margin-top: 40%;
+}
+.programacao h5, .localizacao p:nth-child(1), .contato p:nth-child(2), .meios-contato p:nth-child(2), .ministerio ul{
+	padding-top: 4%;
+}
+.contato a, .direito span{
+	color: #d22311;
+
+}
+.tema img{
+	width: 280px;
+	height: 210px;
+	padding-top: 10%;
+}
+.social li{
+	display: inline-block;
+	padding: 0 1%;	
+}
+.social img{
+	width: 50px;
+	height: 50px;
+}
+.direito, .desenvolvido{
+  padding-top:30%;
+  font-size: 0.62em;
+  text-transform: uppercase;
+}
+.desenvolvido {
+	padding-top: 0;
+}
+.desenvolvido a{
+	text-decoration: none;
+	color: #fff;
+}
+.desenvolvido a:hover{
+	color: #0d758d;
+}
+
+/*Css página sobre*/
+
+#sobre, #evento, #estudo, #text-projeto{
+	margin-top: 5%;
+} 
+#sobre img{
+	margin-top: 18%;
+}
+#sobre p, #evento p, #estudo p, .text-doacao p, #projeto p, #samaritano p{
+	text-transform: none;
+	line-height: 25px;
+	font-size: 1em;
+}
+
+/*Css página eventos*/
+
+#evento h1,#estudo h1, #evento h3, #evento h4, #text-principal h1,#texto h1, #text-projeto h1, #projeto h2,#samaritano h2, #equipe h2, .texto-curso h1, .meios-contato h2{
+	padding-bottom: 6%;
+	font-size: 1.8em;
+	font-family: 'Gotham';
+	text-transform: uppercase;
+}
+#evento h3, #evento h4, .texto-curso h3{
+	padding-bottom: 0;
+	font-size: 1.2em;
+}
+.texto-curso h3{
+	margin-top: -50px;
+	font-style: italic;
+}
+.grade h3{
+	font-weight: 900;
+	margin-top: 40px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+.grade li{
+	list-style: disc;
+	margin-left: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.meios-contato h2{
+	padding-bottom: 0;
+}
+#evento p{
+   margin-top: 5%;
+}
+.evento-2{
+	float: left;
+}
+.evento-2 img{
+     margin-top: 40%;
+}
+.evento-1 header,.evento-2 header{
+	margin-top: 10%;
+}
+
+/*Css página estudos*/
+
+#estudo button{
+	width: 100px;
+	height: 40px;
+	background-color: #d22311;
+    text-transform: uppercase;
+	font-size: 0.875em;
+	border:none;
+	letter-spacing: 1px;
+	margin-top: 4%;
+	text-decoration: none;
+	color: #fff;
+}
+
+#estudo button:hover{
+	color: #d22311;
+	background-color: #fff;
+	border:1px solid #d22311;
+	transition: all 1s;
+}
+
+
+/*Css página doação*/
+#mask{
+	width: 100%;
+	height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+	background-color: rgba(0,0,0,.9);
+	display: none;
+	z-index: 10;
+}
+#box-doacao{
+	background-color: #d22311;
+	width: 80%;
+	height: 590px;
+	border-radius: 4px;
+	margin-left: 140px;
+	padding-left: 15px;
+	position: fixed;
+	top: 40px;
+	display: none;
+	z-index: 9999;
+	}
+.botao-box{
+	width: 50px;
+	height: 50px;
+	float: right;
+	position: relative;
+	right: -18px;
+	top: -18px;
+	cursor: pointer;
+}
+#text-principal h1{
+   line-height: 35px;
+   color: #fff;
+   text-align: center;
+   margin-left: -55px;
+   width: 100%;
+   font-size: 3em;
+}
+#formulario label{
+    font-size: 1em;
+	text-transform: uppercase;
+}
+#formulario-doacao label{
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 1% 0;
+	color: #fff
+}
+#formulario-doacao button{
+	width: 100px;
+	height: 40px;
+	color: #d22311;
+	background-color: #fff;
+	text-transform: uppercase;
+	border:none;
+	float: right;
+
+}
+#formulario button{
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	background-color: #D50000;
+	text-transform: uppercase;
+	border:none;
+	float: right;
+}
+#formulario button:hover{
+	color: #D50000;
+	background-color: #fff;
+	border:1px solid #D50000;
+	transition: all 1s;
+}
+#formulario-doacao button:hover{
+	color: #fff;
+	background-color: #D50000;
+	border:1px solid #D50000;
+	transition: all 1s;
+}
+.text-doacao h2{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	margin-top: 5px;
+}
+.text-doacao h2, .text-doacao p{
+	color: #fff;
+}
+
+#imagem-doacao img {
+  float: right;
+  margin-top: 10%;
+}
+#atencao{
+	background-color: #fff;
+	border-radius: 4px;
+    max-width: 45%;
+    height: 100px;
+    float: right;
+    margin-right: 138px;
+    margin-top: 70px;
+}
+#atencao h4{
+	font-size: 0.90em;
+	color: #d22311;
+	line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 4px;
+    padding-top: 10px;
+}
+
+/*Css página contato*/
+#texto{
+	margin-top: 3%;
+}
+#texto h1{
+	padding-bottom: 2%;
+}
+/*Css página ação social*/
+#projeto h2, #samaritano h2{
+	padding-bottom: 0;
+}
+#equipe img{
+	width: 80%;
+	height: 220px;
+	border-radius: 100%;
+	margin-top: -6%;
+}
+
+#icon-scroll a{
+	width: 50px;
+	height: 50px;
+	float: right;
+	position: fixed;
+	cursor: pointer;
+	right: 3%;
+	top: 85%; 	
+	z-index: 9999;
+	display: none;
+}
+/*Efeito fade ao carregar as páginas*/
+@-webkit-keyframes efeito_Fade_Paginas{
+    0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-moz-keyframes efeito_Fade_Paginas{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-o-keyframes efeito_Fade_Paginas{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes efeito_Fade_Paginas{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+.efeito_Fade_Paginas{
+	-webkit-animation: efeito_Fade_Paginas 1s ease-in-out;
+	-moz-animation: efeito_Fade_Paginas 1s ease-in-out;
+	-o-animation: efeito_Fade_Paginas 1s ease-in-out;
+	animation: efeito_Fade_Paginas 1s ease-in-out;
+}
+
+/* MOBILE */
+
+
+
+@media all and (min-width: 480px){
+    /*Página home*/
+    .logomarca{
+	   width: 60%;
+       margin: 5px auto;
+       text-align: center;
+    }
+    #cabecalho{
+    	 height: 90px;
+    	 position: fixed;
+    	 z-index: 9999;
+    	 background-color: #fff;
+    	 top: 0;
+    }
+    #slide{
+    	margin-top: 90px;
+    }
+    .menu{
+    	width: 100%;
+      	position: absolute;
+        z-index: 100;
+        top: 120px;	
+        text-align: center;
+        position: fixed;	
+    }
+    .menu li{
+    	font-size: 2em;
+    	line-height: 70px;
+    }
+    .menu a{
+    	color: #fff;
+    }
+    .btn-mobile-open,.btn-mobile-close{
+         top: -65px;
+         left: 20px;
+         width: 30px;
+	     height: 30px;
+	     float: left;
+	     cursor: pointer;
+	     position: relative;
+	}
+    .btn-mobile-close{
+         top: -460px;
+         left: 5px;
+         z-index: 9999;
+    }
+    .botao-doacao button{
+    	 width: 60px;
+    	 height: 40px;
+    	 right: 20px;
+    	 top: -38px;
+    	 position: relative;
+    	 font-size: 0.78em;
+    }
+    .mask-menu-mobile{
+	     width: 100%;
+ 	     height: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+	     background-color: rgba(210,35,17,.96);
+	     display: none;
+	     z-index: 10;
+    }
+    .active-menu{
+	    border-top: 2px solid #8B0000;
+	    border-bottom: 2px solid #8B0000; 
+    }
+    .secao-ebd button, .secao-evento button, .secao-acao-social button{
+	    width: 110px;
+	    height: 48px;
+	    font-size: 1em;
+	    margin-left: 35%;
+    }
+    .secao-evento{
+  	    padding-top: 80px;
+    }
+    .secao-acao-social{
+  	    padding-top: 120px;
+    }
+    #rodape{
+  	   text-align: center;
+    } 
+    .programacao,.ministerio,.tema{
+  	   padding-top: 30px;
+    }
+    .secao-ebd p, .secao-evento p, .secao-acao-social p{
+  	   text-align: center;
+   }
+   /*Página sobre*/
+
+   #sobre, #evento, #estudo, #texto, .texto-curso{
+   	  margin-top: 120px;
+   }
+   .texto-curso h3{
+   	margin-top: -10px;
+   }
+}
+
+@media all and (min-width: 768px){
+   /*Página home*/
+   #cabecalho{
+    	 height: 150px;
+    }
+    .btn-mobile-open,.btn-mobile-close{
+         top: -106px;
+         width: 40px;
+	     height: 40px;
+	}
+    .btn-mobile-close{
+         top: -460px;
+    }
+    .botao-doacao button{
+    	 width: 80px;
+    	 height: 50px;
+    	 top: -55px;
+    	 font-size: 1em;
+    }
+    .secao-ebd button, .secao-evento button, .secao-acao-social button{
+    	margin-left: 285px;
+    }
+    .secao-ebd h1, .secao-evento h1, .secao-acao-social h1{
+         font-size: 2em;
+         font-weight: 900;
+    }
+    .secao-ebd p, .secao-evento p, .secao-acao-social p{
+    	font-size: 1.4em;
+    }
+    
+    /*Página sobre*/
+   #sobre, #evento, #estudo, #texto, .texto-curso{
+   	  margin-top: 180px;
+   }
+   /*Página evento*/
+   .evento-1 img, .evento-2 img{
+   	   width: 70%;
+   	   margin-left: 105px;
+   }
+    /*Página estudo*/
+   .estudo01 img{
+   	   width: 70%;
+   	   margin-left: 105px;
+   }
+}
+
+@media all and (min-width: 1366px){
+        
+        /*Página home*/
+        .logomarca{
+	       width: 80%;
+	       margin: -12px -8px;
+
+       }
+       #cabecalho{
+       	  height: 100px;
+          width: 100%;
+	      border-bottom: 1px solid #000;
+	      position:static;
+	      z-index: 0;
+	      background-color: transparent;
+        }
+       .menu{
+    	width: 100%;
+    	margin-top: 1.5%;
+      	position: relative;
+        z-index: 0;
+        top:0;
+        left: -50px;	
+    }
+       .menu li{
+       	   display: inline-block;
+       	   font-size: 1em;
+           padding: 0 2%;
+       }
+       .menu a{
+	     color: #000;
+	   }
+       .btn-mobile-open,.btn-mobile-close{
+       	  display: none;
+       }
+       .botao-doacao button{
+	     float: right;
+	     margin-top: -15px;
+	     width: 100px;
+	     height: 45px;
+      }
+      #slide{
+      	margin-top: 0;
+      }
+      .secao-evento{
+  	    padding-top: 0;
+      }
+      .secao-acao-social{
+  	    padding-top: 0;
+      }
+      #rodape{
+  	   text-align: left;
+     } 
+      .programacao,.ministerio,.tema{
+  	   padding-top: 0;
+     }
+      .secao-ebd h1, .secao-evento h1, .secao-acao-social h1{
+       font-size: 1.5em;
+         font-weight: 900;
+    }
+     .secao-ebd p, .secao-evento p, .secao-acao-social p{
+  	   text-align: left;
+  	   font-size: 1em;
+	   line-height: 25px;
+     }
+    .secao-ebd button, .secao-evento button, .secao-acao-social button{
+	    margin-left: 30%;
+    }
+    #icon-scroll a{
+  	    display: block;
+    }
+     
+     /*Página sobre*/
+      #sobre, #evento, #estudo, #texto, .texto-curso{
+   	  margin-top: 5%;
+   }
+   /*Página evento*/
+   .evento-2 header{
+	margin-top: 30%;
+   }
+ .evento-1 img, .evento-2 img, .estudo01 img{
+   	   width: 100%;
+   	   height: auto;
+   	   margin-left: 0;
+   }
+  .texto-curso h3{
+   	margin-top: -30px;
+   }
+   /*Página estudo*/
+   
+
+    }

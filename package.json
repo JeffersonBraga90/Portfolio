@@ -1,0 +1,22 @@
+{
+  "name": "projeto_igreja",
+  "version": "1.0.0",
+  "description": "Site para uma igreja evangélica.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffersonBraga90/Portfolio.git"
+  },
+  "author": "Jefferson Corrêa Braga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffersonBraga90/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JeffersonBraga90/Portfolio#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

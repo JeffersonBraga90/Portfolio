@@ -611,6 +611,14 @@ img{
 		 height: 48px;
 		 font-size: 1em;
 	}
+	.social h1, #rodape h1{
+		font-family: 'Gotham';
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+	#evento{
+		padding-top: 100px;
+	}
 	 .secao-evento{
 		   padding-top: 80px;
 	 }
@@ -625,6 +633,9 @@ img{
 	 }
 	 .secao-ebd p, .secao-evento p, .secao-acao-social p{
 		  text-align: center;
+	}
+	#text-projeto{
+		padding-top: 100px;
 	}
 	
 	
@@ -797,6 +808,14 @@ img{
    .texto-curso h3{
    	margin-top: -10px;
    }
+   .social h1, #rodape{
+	font-family: 'Gotham';
+	font-size: 1.5em;
+	text-transform: uppercase;
+   }
+   #text-projeto{
+	padding-top: 100px;
+}
    /*PAGINAS DE DOAÇÃO*/
 
 	#mask{
@@ -995,9 +1014,15 @@ img{
 	 transition: all 1s;
  }
  /*Rodape*/
+ #rodape h1{
+	 font-size: 2.5em;
+ }
+ #text-projeto{
+	padding-top: 200px;
+}
 
- .programacao h2, .ministerio h2, .tema h2, .localizacao h2, .contato h2, .social h2, #sobre h2, #texto h1, #text-projeto h2, .programacao h5, .texto-curso h1{
-	font-size: 3em;
+ .programacao h2, .ministerio h2, .tema h2, .social h1, .localizacao h2, .contato h2, .social h2, #sobre h2, #texto h1, #text-projeto h2, .programacao h5, .texto-curso h1{
+	font-size: 2.5em;
 	font-family: 'Gotham';
 	text-transform: uppercase;
 }
@@ -1018,7 +1043,6 @@ img{
         .logomarca{
 	       width: 80%;
 	       margin: -12px -8px;
-
        }
        #cabecalho{
        	  height: 100px;
@@ -1030,10 +1054,10 @@ img{
         }
        .menu{
     	width: 100%;
-    	margin-top: 1.5%;
+    	padding-top: 0;
       	position: relative;
         z-index: 0;
-        top:0;
+        top:-40px;
         left: -50px;	
     }
        .menu li{
@@ -1049,7 +1073,7 @@ img{
        }
        .botao-doacao button{
 	     float: right;
-	     margin-top: -15px;
+	     margin-top: -60px;
 	     width: 100px;
 	     height: 45px;
       }
@@ -1092,6 +1116,7 @@ img{
       #sobre, #evento, #estudo, #texto, .texto-curso{
    	  margin-top: 5%;
    }
+    
    /*Página evento*/
    .evento-2 header{
 	margin-top: 30%;
@@ -1104,6 +1129,13 @@ img{
   .texto-curso h3{
    	margin-top: -30px;
    }
+   .form-group input, .form-group select{
+	width: 100%;
+	height: 50px;
+} 
+.form-group textarea{
+	width: 100%;
+} 
    /*Página rodape*/
    
    .programacao h2, .ministerio h2, .tema h2, .localizacao h2, .contato h2, .social h2, #sobre h2, #texto h1, #text-projeto h2, .programacao h5, .texto-curso h1{
@@ -1119,5 +1151,37 @@ img{
 	font-family: 'Gotham Book';
 	text-transform: uppercase;
 	line-height: 40px;
+}
+#box-doacao{
+	width: 50%;
+	height: auto;
+	margin-left:  25%;
+	top: 50px;
+	padding-left: 95px;
+}
+.botao-box{
+	width: 60px;
+	height: 60px;
+    right: -18px;
+	top: -18px;
+}
+#text-principal h1{
+   margin-left: -60px;
+   width: 50%;
+   font-size: 2.5em;
+   text-align: center;
+}
+
+#formulario-doacao label{
+	font-size: 1.5em;
+}
+#formulario-doacao button{
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 2px;
+	font-size: 1.2em;
+}
+#formulario-doacao button:hover{
+	transition: all 1s;
 }
     }
